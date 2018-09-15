@@ -1,4 +1,3 @@
-#!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
 # Comments in Python start with the hash character.
 # A comment may appear at the start of a line or following whitespace or code, but not within a string literal.
 # A hash character within a string literal is just a hash character.
