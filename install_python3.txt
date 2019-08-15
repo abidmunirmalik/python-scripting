@@ -1,0 +1,33 @@
+$ cd /usr/src
+$ sudo wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tar.xz
+$ sudo tar -xvf Python-3.7.4.tar.xz
+$ cd Python-3.7.4
+$ sudo yum install gcc 
+$ sudo yum install openssl-devel libffi-devel
+$ sudo ./configure --prefix=/opt/python3
+$ sudo make altinstall
+$ sudo ln -s /opt/python3/bin/python3.7 /usr/bin/python3
+$ python3 --version
+$ ls -ltr /usr/bin/python3
+
+# installing pip with Python 3.7
+Since Python version 3.4, pip bundled as pre-installed in standard distribution. So no need to separate install it
+
+$ python3 -m pip --version
+
+$ python3 -m pip list
+
+
+# Setup virtual environment 
+$ mkdir ~/python3
+$ cd python3
+$ python3 -m venv python3_env (it will create python3_env directory so no need to create it)
+$ source python3_env/bin/activate
+(python3_env) $
+
+Note: Within virtual environment, we can simply use python instead of python3, and pip instead of pip3
+(python3_env)$ python --version
+Python 3.7.4
+(python3_env)$ pip --version
+pip 19.0.3 from /home/malik/python3/python3_env/lib/python3.7/site-packages/pip (python 3.7)
+
