@@ -31,3 +31,5 @@ Python 3.7.4
 (python3_env)$ pip --version
 pip 19.0.3 from /home/malik/python3/python3_env/lib/python3.7/site-packages/pip (python 3.7)
 
+# Optionally install MySQL Connector
+$ (python3_env)$ pip install mysql-connector-python
