@@ -1,0 +1,24 @@
+# BINARY is BASE 2 i.e 0 & 1
+# DECIMAL is BASE 10 i.e 0 to 9
+# HEX is BASE 16 i.e 0 to 15
+
+# BINARY TO DECIMAL CONVERSION
+
+- convert 1 0 1 0 to Decimal
+Step 1: Start from right with 2 exponent power of 0 and keep incrementing towards left
+1 0 1 0 = 0*2the power 0 + 1* 2 the power of 1 + 0 * 2 to the power of 2 + 1 * 2 the power of 3
+
+Step 2: ignore all 0s
+
+Step 3: Add the rest = 8 + 2 = 10
+
+1 0 1 0 = 10
+
+# DECIMAL TO BINARY
+
+Step 1: Always right the table first
+128 64 32 16 8 4 2 1
+
+Convert 1 1 1 1 1 1 1 1 to Decimal
+128+64+32+16+8+4+2+1 = 255
+
