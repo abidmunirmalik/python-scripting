@@ -1,0 +1,70 @@
+# STRINGS IN PYTHON
+- A sequence of characters grouped together
+name = 'single-quoted string'
+name = "double-quoted string"
+name = ''' tripple-quoted string'''
+
+# STRING CONCATENATION
+p = "pass"
+w = "word"
+password = p + w
+
+# * OPERATOR
+"Ha" * 4
+HaHaHaHa
+
+# STRING OBJECTS & METHODS
+>>> dir(str)
+
+>>> 'abid'.isdigit()
+False
+>>> 'abid'.capitalize()
+'Abid'
+>>> 'abid'.upper()
+'ABID'
+>>> 'abid'.find('i')
+2
+>>> "Abid Munir Malik".find("Munir")
+5
+>>> "1".zfill(3)
+'001'
+
+>>> "AbidMunirMalik".split("Malik")
+['AbidMunir', '']
+
+>>> "abid".strip("a")
+'bid'
+
+>>> "Abid Munir Malik".startswith("Malik")
+False
+
+>>> "Abid Munir Malik".startswith("Abid") 
+True
+
+>>> "abid".replace("ab","saj")
+'sajid'
+
+>>> "abid".isnumeric()
+False
+
+>>> "5".isnumeric()
+True
+
+>>> 'abid'.index('d')
+3
+
+>>> "abidd".count("d")
+2
+
+>>> "Abid Malik".center(45)
+'                  Abid Malik
+
+>>> "abid".isascii()
+True
+
+>>> "abid munir malik".find("malik")
+11
+
+>>> extenstion = ".py"
+>>> "/usr/lib/man.py".endswith(extenstion)
+True
