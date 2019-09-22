@@ -1,0 +1,20 @@
+>>> from datetime import datetime, timedelta
+
+>>> current_datetime = datetime.now()
+>>> current_datetime
+datetime.datetime(2019, 9, 22, 20, 29, 44, 274492)
+
+>>> current_datetime.date()
+datetime.date(2019, 9, 22)
+
+>>> current_datetime.ctime()
+'Sun Sep 22 20:29:44 2019'
+
+>>> one_year_future_date = current_datetime + timedelta(days=365)
+>>> one_year_future_date
+datetime.datetime(2020, 9, 21, 20, 29, 44, 274492)
+
+>>> three_days_before_date = current_datetime - timedelta(days=3)
+
+>>> three_days_before_date
+datetime.datetime(2019, 9, 19, 20, 29, 44, 274492)
