@@ -14,6 +14,20 @@ datetime.date(2019, 9, 22)
 >>> date.today().day
 22
 
+# HOW TO GET DATETIME FROM LOG FILE
+>>> line = "INFO 2014-07-03T23:27:51 supybot Shutdown complete."
+>>> l = line.split()[1]
+>>> l
+'2014-07-03T23:27:51'
+>>> d = datetime.strptime(l,'%Y-%m-%dT%H:%M:%S')
+>>> type(d)
+<class 'datetime.datetime'>
+>>> str(d)
+'2014-07-03 23:27:51'
+>>> d.ctime()
+'Thu Jul  3 23:27:51 2014'
+
+
 # BIRTHDAY CALCULATOR
 from datetime import date
 
