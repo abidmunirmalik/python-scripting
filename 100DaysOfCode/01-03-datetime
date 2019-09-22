@@ -1,0 +1,49 @@
+# INTRODUCTION TO DATETIME MODULE
+
+>>> from datetime import datetime
+>>> from datetime import date
+>>> dir(datetime)
+>>> datetime.today()
+datetime.datetime(2019, 9, 22, 11, 6, 21, 120151)
+>>> date.today()
+datetime.date(2019, 9, 22)
+>>> date.today().year
+2019
+>>> date.today().month
+9
+>>> date.today().day
+22
+
+# BIRTHDAY CALCULATOR
+from datetime import date
+
+# Today's date
+todaydate = date.today()
+current_year   = todaydate.year
+current_month  = todaydate.month
+current_day    = todaydate.day
+
+
+name_input  = input("Your Name: ")
+birth_month = input("Birthday Month (1-12): ")
+birth_day   = input("Birthday Day (1-31): ")
+
+birth_month = int(birth_month)
+birth_day   = int(birth_day)
+
+birthday = date(current_year,birth_month,birth_day) # we can create 'date' like this
+
+   
+if current_month > birth_month:
+    birthday = date((current_year+1),birth_month,birth_day)
+elif current_month is birth_month and current_day > birth_day:
+    birthday = date((current_year+1),birth_month,birth_day)
+else:
+    birthday = date(current_year,birth_month,birth_day)
+
+daysleft = (birthday - todaydate).days
+
+if daysleft == 0:
+    print("Hurry {}, today is your birthday!!!".format(name_input))
+else:
+    print("{},{} month(s) & {} day(s) until your birthday".format(name_input,daysleft//30,daysleft%30))
