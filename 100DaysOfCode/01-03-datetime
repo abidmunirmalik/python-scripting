@@ -47,3 +47,24 @@ if daysleft == 0:
     print("Hurry {}, today is your birthday!!!".format(name_input))
 else:
     print("{},{} month(s) & {} day(s) until your birthday".format(name_input,daysleft//30,daysleft%30))
+    
+# TIMEDELTA 
+from datetime import timedelta
+from datetime import datetime
+# Time for my next day of work
+# 4 days, 10 hours
+work_time = timedelta(days=4,hours=10)
+type(work_time)
+print(work_time.days)
+print(work_time.seconds) # 10 * 60 * 60
+
+eta   = timedelta(hours=3)
+today = datetime.today()
+
+print(today)
+print(eta)
+
+# Add these together
+eta_time = today + eta
+print(eta_time.ctime()) 
+
