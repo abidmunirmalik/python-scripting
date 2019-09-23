@@ -16,18 +16,18 @@ while count <= 10:
     print(f"We are counting odd numbers: {count}")
     count += 1
 
-# FOR LOOP
-print "For Loop"
-colors = ["Red", "Green", "Blue", "White"]
+# FOR LOOP WITH CONTINUE & BREAK
+colors = ['blue', 'green', 'red', 'purple']
 for color in colors:
-    print(color)
-
-print "=" * 10
-points = (2.1, 3.5, 5.7, 10.8, 20)
-for point in points:
-    print(point)
-
-print "=" * 10
+    if color == 'blue':
+        continue
+    elif color == 'red':
+        print("We'r hit by Red Color, exiting....")
+        break
+    else:
+        print(color)
+        
+# FOR LOOP OVER DICTIONARY
 ages = {"Bob" : 54, "Sandy" : 50, "John" : 48, "Doe" : 46}
 for name,age in ages.items():
     print "Name: " + name
