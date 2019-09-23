@@ -1,4 +1,4 @@
-# WHILE LOOP
+# WHILE LOOP EXAMPLE CONTINUE
 count = 0
 while count <= 10:
     if count % 2 == 0:
@@ -7,7 +7,16 @@ while count <= 10:
     print(f"We are counting odd numbers: {count}")
     count += 1
 
-# For Loop
+# WHILE LOOP EXAMPLE BREAK
+count = 1
+while count <= 10:
+    if count % 2 == 0:
+        print("We hit by an Even number, exiting.....")
+        break
+    print(f"We are counting odd numbers: {count}")
+    count += 1
+
+# FOR LOOP
 print "For Loop"
 colors = ["Red", "Green", "Blue", "White"]
 for color in colors:
