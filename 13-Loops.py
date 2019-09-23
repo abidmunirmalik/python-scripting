@@ -1,18 +1,12 @@
-# Looping in Python - Iteration
-counter = 1
-go = True
-while go:
-    print "Counter is: " + str(counter)
-    counter = counter + 1
-    if counter == 11:
-        print "Clock Over, Exist Now"
-        go = False
-        counter = 1
-while counter <= 10:
-    print "Counter: " + str(counter)
-    counter += 1
+# WHILE LOOP
+count = 0
+while count <= 10:
+    if count % 2 == 0:
+        count += 1
+        continue
+    print(f"We are counting odd numbers: {count}")
+    count += 1
 
-print "=" * 10
 # For Loop
 print "For Loop"
 colors = ["Red", "Green", "Blue", "White"]
@@ -25,7 +19,7 @@ for point in points:
     print(point)
 
 print "=" * 10
-ages = {"Shahid" : 54, "Tahir" : 50, "Sajid" : 48, "Abid" : 46}
+ages = {"Bob" : 54, "Sandy" : 50, "John" : 48, "Doe" : 46}
 for name,age in ages.items():
     print "Name: " + name
     print "Age: "  + str(age)
