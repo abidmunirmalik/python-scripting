@@ -1,0 +1,30 @@
+# HOW TO CRETE FLASK APP
+$ mkdir pomodoro
+$ cd pomodoro
+$ touch app.py
+$ touch data.py
+$ mkdir templates
+$ cd templates/
+$ touch index.html
+$ ls -F
+app.py		data.py		templates/
+
+- Create Virtual Environment within flask project directory
+$ pwd
+/user/amalik/flask-projects/pomodoro
+$ python3 -m venv venv
+$ ls -F
+app.py		data.py		templates/	venv/
+
+pomodoro $ source venv/bin/activate
+(venv)pomodoro$
+
+- Now install flask
+(venv)pomodoro$ pip install flask
+(venv)pomodoro$ pip freeze
+Click==7.0
+Flask==1.1.1
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+Werkzeug==0.16.0
