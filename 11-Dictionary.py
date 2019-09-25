@@ -46,3 +46,43 @@ elif user["active"]:
     print("ACTIVE - %s" % user["name"])
 else:
     print(user["name"])
+
+ # More stuff
+# Dictionary: Key-Value pairs, unordered, mutable
+users = {"name": "Patricia" ,"title" : "Director, IT Operations",
+     "city":"Mason" ,"state": "Ohio"}
+
+# Using 'dict' keyword
+dba = dict(name="Samy", title="Senior DBA", location="Norht California")
+# Items
+print(dba["name"])  
+dba["email"] = "samy@python.net"
+print(dba)
+
+# dict keys, values
+for key in dba.keys():
+    print(key)
+for value in dba.values():
+    print(value)
+for key,value in dba.items():
+    print(key+':',value)    
+
+# try exception
+try:
+    print(dba["name"])
+except:
+    print("Error")    
+# Methods
+del dba["location"]
+print(dba)
+dba.pop("email")
+print(dba)
+dba.popitem() #pop last item
+print(dba)
+
+# Merge/Upgrade Dictionaries
+d1 = {"name": "Abed Malek", "title": "DBA"}
+d2 = {"name": "Abid Malik", "email": "amalik@webassign.net"}
+d1.update(d2)
+print(d1)
+# {'name': 'Abid Malik', 'title': 'DBA', 'email': 'amalik@webassign.net'}
