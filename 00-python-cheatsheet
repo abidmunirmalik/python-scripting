@@ -36,3 +36,47 @@ elif cmd == 'x':
 else:
     print('Sorry, that wasn't understood.')
     
+## COMPLEX CONDITIONAL IF STATEMENT
+if not x and ( z != 2 or not y):
+    # if block code here
+Note: Complex conditions are created by using and, or, not
+
+### FOR-IN 
+items = ['cat', 'hat', 'mat']
+for item in items:
+    print(f'item is {item}')
+    
+for (idx, item) in enumerate(items):
+    print(f'{item} is at index {idx});
+    
+### FUNCTIONS
+def create_user(name, email):
+    # validate arguments
+    db_user = ...
+    return db_user.id
+    
+### FILE I/O
+items = ['cat', 'hat', 'mat']
+with open(filename, 'w') as fout:
+    for item in items:
+        fout.write(item + '\n')
+
+### IMPORT MODULES
+import os 
+OR
+from os import path
+os.path.exists(filename) # style 1
+OR
+path.exists(filename) # style 2
+
+### PACKAGES (third party)
+- Most of the packages are already included in standard library
+- If not, like SQLAlchemy, install them from www.pypi.org
+### USING PIP
+- if you want to install package for the current project, no need to use 'sudo'
+$ pip install requests
+- if you want to install machine-wide package, need 'sudo'
+$ sudo pip install requests
+
+
+    
