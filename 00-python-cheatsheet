@@ -79,4 +79,20 @@ $ pip install requests
 $ sudo pip install requests
 
 
-    
+### SLICING 
+nums = [2,3,5,7,11,13,17,19,23]
+first_prime = nums[0] # 2
+last_prime = nums[-1] # 23
+lowest_four = nums[0:4] # [2,3,5,7]
+lowest_four = nums[:4]  # [2,3,5,7]
+middle_three = nums[3:6] # [7,11,13] last not inclusive
+last_four = nums[5:]  # [13,17,19,23]
+last_four = nums[-4:] # [13,17,19,23]
+
+### TUPLES
+m = (22.5, 44.234, 19.02, 'strong')
+temp = m[0]
+quality = m[3]
+t, la, lo, q = m
+t = 22.5, q='strong'
+
