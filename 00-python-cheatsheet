@@ -96,3 +96,15 @@ quality = m[3]
 t, la, lo, q = m
 t = 22.5, q='strong'
 
+### NAMED TUPLES
+Measurement = collections.namedtuple(
+    'Measurement',
+    'temp, lat, long, quality')
+    
+m = Measurement(22.5, 44.234, 19.02, 'strong')
+temp = m[0]
+temp = m.temp
+quality = m.quality
+print(m)
+# Measurement(temp=22.5, lat=44.234, long=19.02, quality='strong')
+
