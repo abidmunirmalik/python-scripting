@@ -108,3 +108,18 @@ quality = m.quality
 print(m)
 # Measurement(temp=22.5, lat=44.234, long=19.02, quality='strong')
 
+Example
+# RGB color values example
+color = (55, 155, 255) # regular tuple
+print(color[0]) # 55
+
+# let's try with dictionary
+color = {'red': 55, 'green': 155, 'blue':255}
+print(color['red'])
+
+# converting it to named tuple
+Color = collections.namedtuple('Color',['red', 'green', 'blue'])
+
+rainbow = Color(125, 125, 125) 
+print(f'Red: {rainbow.red}, Green: {rainbow.green}, Blue: {rainbow.blue}')
+print(rainbow)
