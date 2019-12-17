@@ -1,0 +1,54 @@
+# Module 1 Assignment
+
+# 1. Write a program which will find factors of given number and find whether the factor is even or odd
+n = input("Enter number to find factorial: ")
+n = int(n)
+factorials = []
+for i in range(1,n+1):
+    j = n%i
+    if(j == 0):
+        factorials.append(i)
+print(f"\nFactors of {n}: {factorials}\n")
+
+print("Factors Even or ODD")
+for f in factorials:
+    if(f%2) == 0:
+        print(f"{f} is Even")
+    else:
+        print(f"{f} is Odd")
+
+# 2. Write a code which accepts a sequence of words as input and prints the words in a sequence after sorting them alphabetically
+import sys
+words = []
+for i in range(1,len(sys.argv)):
+    words.append(sys.argv[i])
+print(sorted(words))
+
+# 3. Write a program, which will find all the numbers between 1000 and 3000 (both included) such that each digit of a number is an even number. The numbers obtained should be printed in a comma separated sequence on a single line
+n1 = 1000
+n2 = 3000
+even_number_list = []
+for i in range(n1,n2+1):
+    if(i%2) == 0:
+        even_number_list.append(i)
+print(f"Even Number list(between 1000-3000): {even_number_list}")
+
+# 4. Write a program that accepts a sentence and calculate the number of letters and digits
+sentence = input("Enter any sentence: ")
+LETTERS,DIGITS = 0,0
+for s in sentence:
+    if s.isdigit():
+        DIGITS += 1
+    elif(s.isalpha()):
+        LETTERS += 1
+
+print(f"LETTERS: {LETTERS}")
+print(f"DIGITS: {DIGITS}")
+
+# 5. Design a code which will find the given number is Palindrome number or not
+n = input("Enter any number: ")
+# slice[start:end:step]
+if (n == n[::-1]):
+    print(f"{n} is palindrome")
+else:
+    print(f"{n} is not palindrome")
